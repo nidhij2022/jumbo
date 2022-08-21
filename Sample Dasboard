@@ -1,0 +1,212 @@
+
+Hands-on Lab : Getting Started with Cognos Dashboard Embedded
+Estimated time needed: 20 minutes
+
+IBM Cognos Dashboard Embedded (CDE) is an AI-fueled business intelligence service that supports the entire data analytics cycle, from discovery to operationalization. It provides users with data discovery capabilities to visually explore and interact with their data to identify the key insights for improving data driven decisions. Users can perform data discovery and then quickly assemble that information into interactive, visually appealing dashboards; all without the need of formal training.
+
+In this lab, first you will learn how to login to IBM Cloud Pak for Data platform through IBM Cloud and create a project there. Next, you will learn how to add a Cognos Dashboard Embedded (CDE) service and upload external data files to your project(supports CSV file only). Finally, you will learn general navigation around the CDE user interface (UI), and how to start a new dashboard with a template in CDE, populate it with a data visualization as well as save the dashboard.
+
+Software Used in this Lab
+Since for the assignment of this module you will be using IBM Cognos Dashboard Embedded (CDE), so in this lab you will get started with IBM Cognos Dashboard Embedded (CDE) Lite plan service through IBM Cloud as this is available at no charge for 50 sessions/month. A session is a 60 minutes period where users can perform unlimited interactions with an embedded dashboard. Lite plan services are deleted after 30 days of inactivity.
+
+Dataset Used in this Lab
+The dataset used in this lab comes from the following source: https://www.kaggle.com/kyanyoga/sample-sales-data under a CC0: Public Domain license.
+
+Objectives
+After completing this lab, you will be able to:
+
+Login to IBM Cloud Pak for Data platform through IBM Cloud
+Create a project in IBM Cloud Pak for Data
+Add a Cognos Dashboard Embedded (CDE) service to your created project
+Navigate around the Cognos Dashboard Embedded (CDE) user interface
+Upload external data files to your created project (Supports .CSV files only)
+Start a new dashboard with a dashboard template and populate it with a data visualization
+Exercise 1 : Login to IBM Cloud Pak for Data and Create a Project
+In this exercise, you will how to login to IBM Cloud Pak for Data platform through IBM Cloud and create a project there.
+
+Task A : (optional) Create an Instance of Watson Studio / Cloud Pak for Data
+If you already have an instance of Watson Studio / Cloud Pak for Data , skip Task A.
+Go to cloud.ibm.com/login.
+
+Enter your IBMid (the email ID you used to sign up for IBM Cloud) and click Continue.
+
+
+
+Enter your password and click Log in.
+
+
+
+Click Navigation Menu Icon on the top left side.
+
+
+
+From the navigation Menu sidebar, click Watson.
+
+
+
+Now from the section Explore our other offerings, click IBM Watson Studio Try for free. You will be redirected to IBM Cloud Pak (dataplatform.cloud.ibm.com) for Data platform.
+
+
+
+Select a region matching the region of your IBM Cloud account. Then click Log in with your IBMid
+
+
+
+Click Go to IBM Cloud Pak for Data.
+
+
+
+You have successfully logged in to the IBM Cloud Pak for Data platform.
+
+
+
+Task B : Login to IBM Cloud Pak for Data
+If you just completed Task A, you will already be logged in, so skip Task B.
+Go to dataplatform.cloud.ibm.com.
+
+Enter your IBMid (the email ID you used to sign up for IBM Cloud), password and select a region, same one you used for IBM Cloud account and IBM Cloud Pak for Data(if you have completed Task A).
+
+
+
+Click Go to IBM Cloud Pak for Data.
+
+
+
+You have successfully logged in to the IBM Cloud Pak for Data platform.
+
+
+
+Task C : Create a New Project
+On the IBM Cloud Pak for Data welcome page, click Create a project.
+
+
+
+Click Create an empty project.
+
+
+
+Write Capstone Project as name of the project and click Add on Select storage service if no storage service appears. If a storage appears, proceed to step 6 directly.
+
+
+
+You will be redirected to a new page. On the Create tab, select Lite plan. Then click Create.
+
+
+
+Now you will be redirected to the previous new project page. Click Refresh.
+
+
+
+Once you see a storage service, click Create.
+
+
+
+You have successfully created a project. Click IBM Cloud Pak for Data at the top left to go back to homepage.
+
+
+
+Exercise 2 : Add a CDE service and Upload External Data
+In this exercise, you will learn how to add a Cognos Dashboard Embedded (CDE) service and upload external data files to your project.
+
+Task A : Add a CDE service
+From IBM Cloud Pak for Data homepage, click Projects under Quick navigation.
+
+
+
+Select Capstone Project you created earlier.
+
+
+
+Click on Manage tab , from the **Services and integrations ** section click Associate service
+
+
+
+Click New service.
+
+
+
+Click IBM Cognos Dashboard Embedded.
+
+
+
+On the Create tab, select a close region and Lite plan. Then click Create.
+
+
+
+Select IBM Cognos Dashboard Embedded service and click Associate service to add the service to Capstone Project.
+
+
+
+Once the service association status appears green, close the associate service page.
+
+
+
+Task B : Upload External Data Files(Supports .CSV Files Only)
+Download the file car_sales_data_sample.csv.
+
+On the Assets page, click Find and add data icon. Click Drop data files here or browse for files to upload.
+
+
+
+Browse to the file download location, select the downloaded CSV file, and click Open.
+
+Once upload completes, car_sales_data_sample.csv will appear under Data assets section.
+
+
+
+Exercise 3 : Navigate around CDE UI and Start a New Dashboard with a Template
+In this exercise, you will learn general navigation around the CDE user interface (UI), and how to start a new dashboard with a template in CDE, populate it with a data visualization as well as save the dashboard.
+
+On the Overview page of Capstone Project project, click New asset.
+
+
+
+Scroll down and select Dashboard Editor.
+
+
+
+Name the dashboard as Simple Dashboard. Then select a Cognos Dashboard Embedded service from the list and click Create.
+
+
+
+Select the tabbed dashboard style. This will allow you to have multiple pages for your dashboards. Select the one-panel template. Click OK.
+
+
+
+Now you have created a new dashboard using the dashboard template.
+
+
+
+Click Sources icon from the Navigation panel to open the data source panel. Then click Add a source icon.
+
+
+
+Select Data assets. Select car_sales_data_sample.csv and click Select.
+
+
+
+From the Navigation panel, select Sources to open the data source panel, if it is not already open. The Data Source panel displays the file car_sales_data_sample.csv. Click on car_sales_data_sample.csv.
+
+
+
+From the Data Source panel, select SALES. Drag it to the Panel and release.
+
+
+
+Now you have successfully started to populate your dashboard with data visualizations too!
+
+
+
+To save the newly created dashboard, click Save icon.
+
+
+
+Congratulations! You have completed the Lab.
+Author(s)
+Sandip Saha Joy
+Other Contributor(s)
+Changelog
+Date	Version	Changed by	Change Description
+2022-05-04	1.1	Malika	Updated screenshot
+2020-10-07	1.0	Sandip Saha Joy	Initial version created
+© IBM Corporation 2020. All rights reserved.

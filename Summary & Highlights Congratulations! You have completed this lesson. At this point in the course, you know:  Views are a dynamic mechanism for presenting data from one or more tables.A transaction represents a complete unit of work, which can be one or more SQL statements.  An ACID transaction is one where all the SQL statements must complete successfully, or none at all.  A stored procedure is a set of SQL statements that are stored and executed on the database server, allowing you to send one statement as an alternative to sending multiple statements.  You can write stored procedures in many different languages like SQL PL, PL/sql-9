@@ -1,0 +1,151 @@
+
+Hands-on Lab: Working with Joins in MySQL using phpMyAdmin
+Estimated time needed: 20 minutes
+
+In this lab, you will learn how to create tables and load data in the MySQL database service using the phpMyAdmin graphical user interface (GUI) tool.
+
+Software Used in this Lab
+In this lab, you will use MySQL. MySQL is a Relational Database Management System (RDBMS) designed to efficiently store, manipulate, and retrieve data.
+
+
+To complete this lab you will utilize MySQL relational database service available as part of IBM Skills Network Labs (SN Labs) Cloud IDE. SN Labs is a virtual lab environment used in this course.
+
+Database Used in this Lab
+The database used in this lab is an internal database. You will be working on a sample HR database. This HR database schema consists of 5 tables called EMPLOYEES, JOB_HISTORY, JOBS, DEPARTMENTS and LOCATIONS. Each table has a few rows of sample data. The following diagram shows the tables for the HR database:
+
+
+In this lab, you will run through some SQL practice problems that will provide hands-on experience with the different kinds of join operations.
+
+
+How does a CROSS JOIN (also known as Cartesian Join) statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+CROSS JOIN table2;
+
+How does an INNER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+WHERE condition;
+
+How does a LEFT OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+LEFT OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+How does a RIGHT OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+RIGHT OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+
+How does a FULL OUTER JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1
+LEFT  OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition
+
+UNION
+
+SELECT column_name(s)
+FROM table1
+RIGHT  OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition
+Union operator
+
+The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+Every SELECT statement within UNION must have the same number of columns The columns must also have similar data types The columns in every SELECT statement must also be in the same order
+
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+
+How does a SELF JOIN statement syntax look?
+
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
+
+# Exercise
+Problem:
+
+Select the names and job start dates of all employees who work for the department number 5.
+
+Hint
+Solution
+Output
+Problem:
+
+Select the names, job start dates, and job titles of all employees who work for the department number 5.
+
+Hint
+Solution
+Output
+Problem:
+
+*Perform a Left Outer Join on the EMPLOYEES and DEPARTMENT tables and select employee id, last name, department id and department name for
+
+all employees.*
+
+Hint
+Solution
+Output
+Problem:
+
+Re-write the previous query but limit the result set to include only the rows for employees born before 1980.
+
+Hint
+Solution
+Output
+Problem:
+
+Re-write the previous query but have the result set include all the employees but department names for only the employees who were born before 1980.
+
+Hint
+Solution
+Output
+Problem:
+
+Perform a Full Join on the EMPLOYEES and DEPARTMENT tables and select the First name, Last name and Department name of all employees.
+
+Hint
+Solution
+Output
+Problem:
+
+Re-write the previous query but have the result set include all employee names but department id and department names only for male employees.
+
+Hint
+Solution
+Output
+
+Solution Script
+If you would like to run all the solution queries of the SQL problems of this lab with a script, download the script below. Import the script to mysql phpadmin interface. Follow Hands-on Lab : Create tables using SQL scripts and Load data into tables on how to import a script to mysql phpadmin interface.
+
+JOIN_Solution_Script.sql
+
+Congratulations! You have completed this lab, and you are ready for the next topic.
+
+Author(s)
+Lakshmi Holla
+
+Malika Singla
+
+Changelog
+Date	Version	Changed by	Change Description
+2021-08-09	0.2	Sathya Priya	Updated SQL link
+2021-11-01	0.1	Lakshmi Holla, Malika Singla	Initial Version
+© IBM Corporation 2021. All rights reserved.
